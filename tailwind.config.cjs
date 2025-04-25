@@ -24,9 +24,15 @@ module.exports = {
           DEFAULT: '#a37d4c',
           hover: '#967142',
         },
+        gold: {
+          500: '#FFD700', // Custom gold color
+        },
       },
       backgroundImage: {
         room: "url('/src/assets/img/room.jpg')",
+      },
+      backgroundImage: {
+        'business-bg': "url('/path/to/your/background-image.jpg')",
       },
     },
   },

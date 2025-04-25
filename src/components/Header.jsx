@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { LogoWhite } from '../assets'; // SVG Logo
 import { LogoDark } from '../assets'; // SVG Logo
 
-
 const Header = () => {
 
   const { resetRoomFilterData } = useRoomContext();
@@ -19,7 +18,15 @@ const Header = () => {
     );
   });
 
-  const navLinks = ['Home', 'Rooms', 'Restaurant', 'Spa', 'Contact'];
+  const navLinks = ['Book your stay', 'Location', 'Contact'];
+
+  // Badges (stickers)
+  // const badges = [
+  //   { text: 'Free Wi-Fi' },
+  //   { text: 'Business Friendly' },
+  //   { text: 'Multi-cuisine Dining' },
+  //   { text: 'Prime Location' },
+  // ];
 
   return (
     <header
@@ -33,8 +40,8 @@ const Header = () => {
         <Link to="/" onClick={resetRoomFilterData}>
           {
             header
-              ? <LogoDark className='w-[160px]' /> //<img className='w-[160px]' src={LogoDark} />
-              : <LogoWhite className='w-[160px]' /> //<img className='w-[160px]' src={LogoWhite} />
+              ? <LogoDark className='w-[160px]' /> 
+              : <LogoWhite className='w-[160px]' />
           }
         </Link>
 
@@ -51,6 +58,15 @@ const Header = () => {
         </nav>
 
       </div>
+
+      {/* Stickers/Badges at the bottom */}
+      {/* <div className="absolute bottom-0 w-full flex justify-center gap-6 py-4 bg-transparent">
+        {badges.map((badge, index) => (
+          <div key={index} className="px-4 py-2 text-xs font-bold text-gold-500">
+            {badge.text}
+          </div>
+        ))}
+      </div> */}
 
     </header>
   );

@@ -22,19 +22,19 @@ export const kidsList = [
 export const sliderData = [
     {
         id: 1,
-        title: 'Your Luxury Hotel For Vacation',
+        title: 'Stay Smart.  ',
         bg: images.Slider1,
         btnNext: 'See our rooms',
     },
     {
         id: 2,
-        title: 'Feel Relax & Enjoy Your Luxuriousness',
+        title: 'Stay Central.',
         bg: images.Slider2,
         btnNext: 'See our rooms',
     },
     {
         id: 3,
-        title: 'Your Luxury Hotel For Vacation',
+        title: 'Stay Lemon Park.',
         bg: images.Slider3,
         btnNext: 'See our rooms',
     },

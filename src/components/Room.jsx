@@ -12,23 +12,22 @@ const Room = ({ room }) => {
         <img src={image} alt="img" className='group-hover:scale-110 transition-all duration-300 w-full' />
       </div>
 
-
       <div className='bg-white shadow-lg max-w-[300px] mx-auto h-[60px] -translate-y-1/2 flex justify-center items-center uppercase font-tertiary tracking-[1px] font-semibold text-base'>
 
         <div className='flex justify-between w-[80%]'>
 
           <div className='flex items-center gap-x-2'>
-            <div className='text-accent'>
+            <div className='text-yellow-500'>
               <BsArrowsFullscreen className='text-[15px]' />
             </div>
             <div className='flex gap-x-1'>
               <div>Size</div>
-              <div>{size}m2</div>
+              <div>{size}m²</div>
             </div>
           </div>
 
           <div className='flex items-center gap-x-2'>
-            <div className='text-accent'>
+            <div className='text-yellow-500'>
               <BsPeople className='text-[18px]' />
             </div>
             <div className='flex gap-x-1'>
@@ -41,21 +40,19 @@ const Room = ({ room }) => {
 
       </div>
 
-
       {/* name and description */}
       <div className='text-center'>
         <Link to={`/room/${id}`}>
-          <h3 className="h3">{name}</h3>
+          <h3 className="h3 text-yellow-600">{name}</h3>
         </Link>
 
-        <p className='max-w-[300px] mx-auto mb-3 lg:mb-6'>{description.slice(0, 56)}..</p>
+        <p className='max-w-[300px] mx-auto mb-3 lg:mb-6 text-gray-600'>{description.slice(0, 56)}..</p>
       </div>
-
 
       {/* button */}
       <Link
         to={`/room/${id}`}
-        className="btn btn-secondary btn-sm max-w-[240px] mx-auto duration-300"
+        className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded max-w-[240px] mx-auto block duration-300"
       >
         Book now from ${price}
       </Link>
